@@ -22,9 +22,7 @@ extension IndicazioniViewController: MKMapViewDelegate {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y:5)
-                let indicationButton = UIButton()
-                indicationButton.setImage(UIImage.init(named: "IndicationsIcon.ico"), forState: .Normal)
-                view.rightCalloutAccessoryView = indicationButton
+                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
             }
             return view
         }
