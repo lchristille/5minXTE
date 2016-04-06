@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  5minXTE
+//  DiocesiAL
 //
-//  Created by Luca Christille on 06/04/16.
+//  Created by Luca Christille on 25/03/16.
 //  Copyright © 2016 Luca Christille. All rights reserved.
 //
 

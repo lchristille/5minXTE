@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uuI-0V-oXk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parabole della Misericordia-->
+        <scene sceneID="p7h-9F-RIG">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="sSc-Hc-Oxa" customClass="ParabolaTableViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LuI-ns-42q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParabolaTableViewCell" textLabel="0dT-X7-ynz" style="IBUITableViewCellStyleDefault" id="VQ8-v4-7op" customClass="ParabolaTableViewCell" customModule="XTE5" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VQ8-v4-7op" id="cWr-m2-uGP">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="0dT-X7-ynz">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="NameLabel" destination="0dT-X7-ynz" id="f3x-Kp-YzV"/>
+                                    <segue destination="wOh-0U-KTF" kind="show" identifier="ShowDetail" id="GPm-kx-MhR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sSc-Hc-Oxa" id="Dpo-TE-8CS"/>
+                            <outlet property="delegate" destination="sSc-Hc-Oxa" id="5YW-Z0-IZb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Parabole della Misericordia" id="wll-1E-H5z"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6p-77-EDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-2183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z6a-je-sFQ">
+            <objects>
+                <navigationController id="OHD-1w-22e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zcd-7Z-otz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LED-06-LLx">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="sSc-Hc-Oxa" kind="relationship" relationship="rootViewController" id="8Qs-Ky-E9p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcV-9s-Z8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="-2183"/>
+        </scene>
+        <!--Parabole-->
+        <scene sceneID="1Jw-at-aHM">
+            <objects>
+                <splitViewController id="TIi-jy-VgV" userLabel="Parabole" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Parabole" id="4i0-A4-xyy" userLabel="Parabole"/>
+                    <connections>
+                        <segue destination="OHD-1w-22e" kind="relationship" relationship="masterViewController" id="Kak-Th-iPa"/>
+                        <segue destination="wOh-0U-KTF" kind="relationship" relationship="detailViewController" id="DKj-F9-br7"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCu-D4-JVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="-1824"/>
+        </scene>
+        <!--Parabola View Controller-->
+        <scene sceneID="Rdn-pX-vvf">
+            <objects>
+                <viewController id="wOh-0U-KTF" customClass="ParabolaViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D2o-df-Ihf"/>
+                        <viewControllerLayoutGuide type="bottom" id="2C3-IL-I7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3Z-4I-VGp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tkN-ZW-brF">
+                                <rect key="frame" x="20" y="72" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WXM-K2-y1Y"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Titolo">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-9N-mZi" userLabel="Testo">
+                                <rect key="frame" x="0.0" y="130" width="580" height="421"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Testo">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tkN-ZW-brF" firstAttribute="top" secondItem="D2o-df-Ihf" secondAttribute="bottom" constant="8" symbolic="YES" id="F7W-cB-cLt"/>
+                            <constraint firstItem="tkN-ZW-brF" firstAttribute="leading" secondItem="g3Z-4I-VGp" secondAttribute="leadingMargin" id="J5t-ac-oZC"/>
+                            <constraint firstItem="eYk-9N-mZi" firstAttribute="top" secondItem="tkN-ZW-brF" secondAttribute="bottom" constant="8" symbolic="YES" id="b2y-uz-cO6"/>
+                            <constraint firstItem="tkN-ZW-brF" firstAttribute="trailing" secondItem="g3Z-4I-VGp" secondAttribute="trailingMargin" id="c82-Pj-kh3"/>
+                            <constraint firstItem="eYk-9N-mZi" firstAttribute="bottom" secondItem="2C3-IL-I7s" secondAttribute="top" id="eK1-nG-7Uf"/>
+                            <constraint firstItem="eYk-9N-mZi" firstAttribute="trailing" secondItem="tkN-ZW-brF" secondAttribute="trailing" id="uRP-Kz-ne6"/>
+                            <constraint firstItem="eYk-9N-mZi" firstAttribute="leading" secondItem="g3Z-4I-VGp" secondAttribute="leading" id="y9S-uA-8MT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testo" destination="eYk-9N-mZi" id="e2z-uW-984"/>
+                        <outlet property="titolo" destination="tkN-ZW-brF" id="TXb-FM-9qS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D32-IH-4xz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963" y="-1448"/>
+        </scene>
+        <!--Eventi-->
+        <scene sceneID="toB-dX-25I">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="WjN-Do-kJ8" userLabel="Eventi" customClass="EventiViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d6L-uN-CeL"/>
+                        <viewControllerLayoutGuide type="bottom" id="do4-4d-ZaF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pdk-5Q-Ul0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95q-CV-OXv">
+                                <rect key="frame" x="277" y="28" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="95q-CV-OXv" firstAttribute="top" secondItem="d6L-uN-CeL" secondAttribute="bottom" id="02f-Pk-VzM"/>
+                            <constraint firstItem="95q-CV-OXv" firstAttribute="leading" secondItem="pdk-5Q-Ul0" secondAttribute="leading" constant="274" id="6Zj-Y7-kFB"/>
+                            <constraint firstItem="95q-CV-OXv" firstAttribute="centerX" secondItem="pdk-5Q-Ul0" secondAttribute="centerX" id="Mgt-KI-rsu"/>
+                            <constraint firstItem="95q-CV-OXv" firstAttribute="top" secondItem="d6L-uN-CeL" secondAttribute="bottom" constant="8" symbolic="YES" id="mOn-SD-tfY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="02f-Pk-VzM"/>
+                                <exclude reference="6Zj-Y7-kFB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Eventi" id="lNj-6J-lzc" userLabel="Eventi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LY2-vf-FLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-794"/>
+        </scene>
+        <!--Indicazioni-->
+        <scene sceneID="Eei-d2-pZU">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="vdY-0F-45K" userLabel="Indicazioni" customClass="IndicazioniViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s5k-WD-rcC"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZU-LI-Cua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jTp-TC-v2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-kR-DCn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQM-kR-DCn" firstAttribute="bottom" secondItem="QZU-LI-Cua" secondAttribute="top" id="0bV-Q9-Zr0"/>
+                            <constraint firstItem="nQM-kR-DCn" firstAttribute="leading" secondItem="jTp-TC-v2Q" secondAttribute="leading" id="1h5-bS-aLP"/>
+                            <constraint firstItem="nQM-kR-DCn" firstAttribute="top" secondItem="jTp-TC-v2Q" secondAttribute="top" id="Kis-0W-Guy"/>
+                            <constraint firstAttribute="trailing" secondItem="nQM-kR-DCn" secondAttribute="trailing" id="hK0-9k-UQO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Indicazioni" id="L9l-rl-oal" userLabel="Indicazioni"/>
+                    <connections>
+                        <outlet property="mappa" destination="nQM-kR-DCn" id="CMe-3C-LdF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQk-5w-Eso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="76"/>
+        </scene>
+        <!--Live-->
+        <scene sceneID="aGq-wg-v9y">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="WiJ-WN-RQe" userLabel="Live" customClass="LiveViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NDe-Ko-s6g"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdn-B6-Ful"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZxS-sy-vWg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5G-vr-HKZ">
+                                <rect key="frame" x="285" y="28" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g5G-vr-HKZ" firstAttribute="top" secondItem="NDe-Ko-s6g" secondAttribute="bottom" constant="8" symbolic="YES" id="IDs-3u-5U7"/>
+                            <constraint firstItem="g5G-vr-HKZ" firstAttribute="centerX" secondItem="ZxS-sy-vWg" secondAttribute="centerX" id="hrB-zI-MhU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Live" id="7vx-zz-7XX" userLabel="Live"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALE-Ej-6oY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="834"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="u1S-Yh-CIK">
+            <objects>
+                <tabBarController id="uuI-0V-oXk" customClass="TabBarViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SZh-xA-X1l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TIi-jy-VgV" kind="relationship" relationship="viewControllers" id="IK0-ur-I1m"/>
+                        <segue destination="WjN-Do-kJ8" kind="relationship" relationship="viewControllers" id="EfM-uE-WhY"/>
+                        <segue destination="vdY-0F-45K" kind="relationship" relationship="viewControllers" id="7Ov-0P-ubR"/>
+                        <segue destination="WiJ-WN-RQe" kind="relationship" relationship="viewControllers" id="mDS-RN-k5N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4Z-3m-5PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-85"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GPm-kx-MhR"/>
+    </inferredMetricsTieBreakers>
+</document>
