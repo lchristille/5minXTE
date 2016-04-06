@@ -28,4 +28,10 @@ extension IndicazioniViewController: MKMapViewDelegate {
         }
         return nil
     }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! Artwork
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+        location.mapItem().openInMapsWithLaunchOptions(launchOptions)
+    }
 }

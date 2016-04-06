@@ -17,7 +17,7 @@ class ParabolaViewController: UIViewController {
     let titoloAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline), ]
     let testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody)]
     
-    var selectedParabola = Parabola(_title: "", _text: "")
+    var selectedParabola = Parabola(_title: "Benvenuto in 5minXTE", _text: "L'app migliore che ci sia!")
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

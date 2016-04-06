@@ -26,7 +26,7 @@ class IndicazioniViewController: UIViewController {
         
         mappa.delegate = self
         
-        let artwork = Artwork(title: "5' X TE", locationName:"Chiesa di San Giovannino", discipline: "Chiesa", coordinate: CLLocationCoordinate2D(latitude: 44.9103781, longitude: 8.6122585))
+        let artwork = Artwork(title: "5 min X TE", locationName:"Chiesa di San Giovannino", discipline: "Chiesa", coordinate: CLLocationCoordinate2D(latitude: 44.9103781, longitude: 8.6122585))
         
         mappa.addAnnotation(artwork)
         
