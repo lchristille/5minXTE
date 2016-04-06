@@ -9,13 +9,13 @@
         <!--Parabole della Misericordia-->
         <scene sceneID="p7h-9F-RIG">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="sSc-Hc-Oxa" customClass="ParabolaTableViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="sSc-Hc-Oxa" customClass="ParabolaTableViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LuI-ns-42q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParabolaTableViewCell" textLabel="0dT-X7-ynz" style="IBUITableViewCellStyleDefault" id="VQ8-v4-7op" customClass="ParabolaTableViewCell" customModule="XTE5" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParabolaTableViewCell" textLabel="0dT-X7-ynz" style="IBUITableViewCellStyleDefault" id="VQ8-v4-7op" customClass="ParabolaTableViewCell" customModule="_minXTE" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VQ8-v4-7op" id="cWr-m2-uGP">
@@ -85,7 +85,7 @@
         <!--Parabola View Controller-->
         <scene sceneID="Rdn-pX-vvf">
             <objects>
-                <viewController id="wOh-0U-KTF" customClass="ParabolaViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wOh-0U-KTF" customClass="ParabolaViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D2o-df-Ihf"/>
                         <viewControllerLayoutGuide type="bottom" id="2C3-IL-I7s"/>
@@ -147,7 +147,7 @@
         <!--Eventi-->
         <scene sceneID="toB-dX-25I">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="WjN-Do-kJ8" userLabel="Eventi" customClass="EventiViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="WjN-Do-kJ8" userLabel="Eventi" customClass="EventiViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d6L-uN-CeL"/>
                         <viewControllerLayoutGuide type="bottom" id="do4-4d-ZaF"/>
@@ -186,7 +186,7 @@
         <!--Indicazioni-->
         <scene sceneID="Eei-d2-pZU">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="vdY-0F-45K" userLabel="Indicazioni" customClass="IndicazioniViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="vdY-0F-45K" userLabel="Indicazioni" customClass="IndicazioniViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s5k-WD-rcC"/>
                         <viewControllerLayoutGuide type="bottom" id="QZU-LI-Cua"/>
@@ -219,7 +219,7 @@
         <!--Live-->
         <scene sceneID="aGq-wg-v9y">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="WiJ-WN-RQe" userLabel="Live" customClass="LiveViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="WiJ-WN-RQe" userLabel="Live" customClass="LiveViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NDe-Ko-s6g"/>
                         <viewControllerLayoutGuide type="bottom" id="pdn-B6-Ful"/>
@@ -250,7 +250,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="u1S-Yh-CIK">
             <objects>
-                <tabBarController id="uuI-0V-oXk" customClass="TabBarViewController" customModule="XTE5" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="uuI-0V-oXk" customClass="TabBarViewController" customModule="_minXTE" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SZh-xA-X1l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
