@@ -9,6 +9,16 @@
 import Foundation
 import Alamofire
 
+class Eventi {
+    let data:String = "01/01/2016"
+    let gruppo:String = "gruppoN"
+    let pagina:String = "default.hmtl"
+    
+    static getEventiList() {
+        
+    }
+}
+
 
 
 
