@@ -27,19 +27,10 @@ class ParaboleModel {
         return parabole
     }
     
-    static func defaultParabole() -> ParaboleModel {
-        let defaultParabModel = ParaboleModel()
-        let primaParabola = Parabola(_title: "I due debitori del creditore", _text: "Uno dei farisei lo invitò a mangare da lui. Egli entrò nella casa del fariseo e si mise a tavola")
-        defaultParabModel.addParabola(primaParabola)
-        let secondaParabola = Parabola(_title: "Il buon samaritano", _text: "Un dottore della legge si alzò per metterlo alla prova: «Maestro, che devo fare per ereditare la vita eterna?»")
-        defaultParabModel.addParabola(secondaParabola)
-        return defaultParabModel
-    }
-    
     static func paraboleFromFiles() -> ParaboleModel {
         let returnParabModel = ParaboleModel()
         var attrString = NSAttributedString()
-        let ParaboleDict = ["I Due Debitori del creditore":"iduedebitoridelcreditore", "Il Buon Samaritano":"ilbuonsamaritano", "La Pecora e La Dracma Perdute e Ritrovate":"lapecoraeladracma", "Il Padre Misericordioso (Figliol Prodigo)":"padremisericordioso"]
+        let ParaboleDict = ["I Due Debitori del creditore":"iduedebitoridelcreditore", "Il Buon Samaritano":"ilbuonsamaritano", "La Pecora e La Dracma Perdute e Ritrovate":"lapecoraeladracma", "Il Padre Misericordioso (Figliol Prodigo)":"padremisericordioso", "Il Fariseo e il Pubblicano al Tempio":"fariseopubblicano", "Il Giudice e la Vedova":"ilgiudiceelavedova", "Il Ricco e il Povero Lazzaro":"ilriccoeilpoverolazzaro", "La Donna Adultera":"ladonnaadultera", "La Samaritana al Pozzo di Giacobbe":"lasamaritanaalpozzodigiacobbe", "Zaccheo":"zaccheo"]
         
         
         for (titolo, filename) in ParaboleDict {

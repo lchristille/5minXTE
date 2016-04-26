@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD221F7A59C667A78C3D4442 /* Pods_5minXTE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD21C6D8618CB536F653C539 /* Pods_5minXTE.framework */; };
+		C6530CC51CD006CD00483A96 /* fariseopubblicano.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CBF1CD006CD00483A96 /* fariseopubblicano.html */; };
+		C6530CC61CD006CD00483A96 /* ilgiudiceelavedova.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC01CD006CD00483A96 /* ilgiudiceelavedova.html */; };
+		C6530CC71CD006CD00483A96 /* ilriccoeilpoverolazzaro.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC11CD006CD00483A96 /* ilriccoeilpoverolazzaro.html */; };
+		C6530CC81CD006CD00483A96 /* ladonnaadultera.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC21CD006CD00483A96 /* ladonnaadultera.html */; };
+		C6530CC91CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC31CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html */; };
+		C6530CCA1CD006CD00483A96 /* zaccheo.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC41CD006CD00483A96 /* zaccheo.html */; };
 		C66A00861CB59EBC00AB873D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66A00851CB59EBC00AB873D /* MapKit.framework */; };
 		C66A008C1CB59F2300AB873D /* IndicationsIcon.ico in Resources */ = {isa = PBXBuildFile; fileRef = C66A00881CB59F2300AB873D /* IndicationsIcon.ico */; };
 		C66A008D1CB59F2300AB873D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00891CB59F2300AB873D /* Artwork.swift */; };
@@ -31,11 +36,19 @@
 		C66A00B51CB5A06A00AB873D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66A00B41CB5A06A00AB873D /* LaunchScreen.storyboard */; };
 		C672B3791CB5BB7A00283E09 /* Eventi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672B3781CB5BB7A00283E09 /* Eventi.swift */; };
 		C6C060EE1CB69134009BBAC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C060ED1CB69134009BBAC9 /* Assets.xcassets */; };
+		CBC0EC82AAC4BD24AA756DEB /* libPods-5minXTE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB240462736C8E25FA04C1 /* libPods-5minXTE.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10928E66854A6D51015D153A /* Pods-5minXTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5minXTE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5minXTE/Pods-5minXTE.debug.xcconfig"; sourceTree = "<group>"; };
-		BD21C6D8618CB536F653C539 /* Pods_5minXTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5minXTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51456C2DCE192C31FC20465A /* Pods-5minXTE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5minXTE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5minXTE/Pods-5minXTE.debug.xcconfig"; sourceTree = "<group>"; };
+		84683C9B9D8FFFB1544E59C4 /* Pods-5minXTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5minXTE.release.xcconfig"; path = "Pods/Target Support Files/Pods-5minXTE/Pods-5minXTE.release.xcconfig"; sourceTree = "<group>"; };
+		9CCB240462736C8E25FA04C1 /* libPods-5minXTE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5minXTE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6530CBF1CD006CD00483A96 /* fariseopubblicano.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fariseopubblicano.html; sourceTree = "<group>"; };
+		C6530CC01CD006CD00483A96 /* ilgiudiceelavedova.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ilgiudiceelavedova.html; sourceTree = "<group>"; };
+		C6530CC11CD006CD00483A96 /* ilriccoeilpoverolazzaro.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ilriccoeilpoverolazzaro.html; sourceTree = "<group>"; };
+		C6530CC21CD006CD00483A96 /* ladonnaadultera.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ladonnaadultera.html; sourceTree = "<group>"; };
+		C6530CC31CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lasamaritanaalpozzodigiacobbe.html; sourceTree = "<group>"; };
+		C6530CC41CD006CD00483A96 /* zaccheo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zaccheo.html; sourceTree = "<group>"; };
 		C66A00701CB59E8800AB873D /* 5minXTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5minXTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66A007F1CB59E8800AB873D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C66A00851CB59EBC00AB873D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -61,7 +74,6 @@
 		C66A00B41CB5A06A00AB873D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C672B3781CB5BB7A00283E09 /* Eventi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eventi.swift; sourceTree = "<group>"; };
 		C6C060ED1CB69134009BBAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE5592CAFE27E948C0D6D28E /* Pods-5minXTE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5minXTE.release.xcconfig"; path = "Pods/Target Support Files/Pods-5minXTE/Pods-5minXTE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,26 +82,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66A00861CB59EBC00AB873D /* MapKit.framework in Frameworks */,
-				BD221F7A59C667A78C3D4442 /* Pods_5minXTE.framework in Frameworks */,
+				CBC0EC82AAC4BD24AA756DEB /* libPods-5minXTE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F183D1CDBE70033156308C0 /* Frameworks */ = {
+		0D9C8DFAC07DDD06BE2464E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BD21C6D8618CB536F653C539 /* Pods_5minXTE.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		424B2910C639F76324C5623B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				10928E66854A6D51015D153A /* Pods-5minXTE.debug.xcconfig */,
-				EE5592CAFE27E948C0D6D28E /* Pods-5minXTE.release.xcconfig */,
+				51456C2DCE192C31FC20465A /* Pods-5minXTE.debug.xcconfig */,
+				84683C9B9D8FFFB1544E59C4 /* Pods-5minXTE.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -100,8 +104,8 @@
 				C66A00851CB59EBC00AB873D /* MapKit.framework */,
 				C66A00721CB59E8800AB873D /* 5minXTE */,
 				C66A00711CB59E8800AB873D /* Products */,
-				424B2910C639F76324C5623B /* Pods */,
-				0F183D1CDBE70033156308C0 /* Frameworks */,
+				0D9C8DFAC07DDD06BE2464E5 /* Pods */,
+				F3FC22D0526D4FAC957AE865 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +164,12 @@
 				C66A00951CB59F4700AB873D /* ilbuonsamaritano.html */,
 				C66A00961CB59F4700AB873D /* lapecoraeladracma.html */,
 				C66A00971CB59F4700AB873D /* padremisericordioso.html */,
+				C6530CBF1CD006CD00483A96 /* fariseopubblicano.html */,
+				C6530CC01CD006CD00483A96 /* ilgiudiceelavedova.html */,
+				C6530CC11CD006CD00483A96 /* ilriccoeilpoverolazzaro.html */,
+				C6530CC21CD006CD00483A96 /* ladonnaadultera.html */,
+				C6530CC31CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html */,
+				C6530CC41CD006CD00483A96 /* zaccheo.html */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,6 +223,14 @@
 				C672B3781CB5BB7A00283E09 /* Eventi.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		F3FC22D0526D4FAC957AE865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CCB240462736C8E25FA04C1 /* libPods-5minXTE.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,12 +302,18 @@
 			files = (
 				C66A009D1CB59F4700AB873D /* padremisericordioso.html in Resources */,
 				C66A00B51CB5A06A00AB873D /* LaunchScreen.storyboard in Resources */,
+				C6530CC91CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html in Resources */,
 				C66A009A1CB59F4700AB873D /* iduedebitoridelcreditore.html in Resources */,
 				C66A009C1CB59F4700AB873D /* lapecoraeladracma.html in Resources */,
 				C66A00A91CB5A00700AB873D /* Main.storyboard in Resources */,
 				C66A008C1CB59F2300AB873D /* IndicationsIcon.ico in Resources */,
+				C6530CC81CD006CD00483A96 /* ladonnaadultera.html in Resources */,
+				C6530CCA1CD006CD00483A96 /* zaccheo.html in Resources */,
 				C6C060EE1CB69134009BBAC9 /* Assets.xcassets in Resources */,
+				C6530CC51CD006CD00483A96 /* fariseopubblicano.html in Resources */,
+				C6530CC61CD006CD00483A96 /* ilgiudiceelavedova.html in Resources */,
 				C66A009B1CB59F4700AB873D /* ilbuonsamaritano.html in Resources */,
+				C6530CC71CD006CD00483A96 /* ilriccoeilpoverolazzaro.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +479,7 @@
 		};
 		C66A00831CB59E8800AB873D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10928E66854A6D51015D153A /* Pods-5minXTE.debug.xcconfig */;
+			baseConfigurationReference = 51456C2DCE192C31FC20465A /* Pods-5minXTE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,7 +495,7 @@
 		};
 		C66A00841CB59E8800AB873D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE5592CAFE27E948C0D6D28E /* Pods-5minXTE.release.xcconfig */;
+			baseConfigurationReference = 84683C9B9D8FFFB1544E59C4 /* Pods-5minXTE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
