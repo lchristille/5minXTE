@@ -9,7 +9,7 @@
 import UIKit
 
 class EventiViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

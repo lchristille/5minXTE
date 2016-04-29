@@ -13,6 +13,7 @@
 		C6530CC81CD006CD00483A96 /* ladonnaadultera.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC21CD006CD00483A96 /* ladonnaadultera.html */; };
 		C6530CC91CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC31CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html */; };
 		C6530CCA1CD006CD00483A96 /* zaccheo.html in Resources */ = {isa = PBXBuildFile; fileRef = C6530CC41CD006CD00483A96 /* zaccheo.html */; };
+		C65DE5081CD3EEA6001F0166 /* EventiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65DE5071CD3EEA6001F0166 /* EventiTableViewCell.swift */; };
 		C66A00861CB59EBC00AB873D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66A00851CB59EBC00AB873D /* MapKit.framework */; };
 		C66A008C1CB59F2300AB873D /* IndicationsIcon.ico in Resources */ = {isa = PBXBuildFile; fileRef = C66A00881CB59F2300AB873D /* IndicationsIcon.ico */; };
 		C66A008D1CB59F2300AB873D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00891CB59F2300AB873D /* Artwork.swift */; };
@@ -30,11 +31,11 @@
 		C66A00A71CB59F7B00AB873D /* ParabolaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00A61CB59F7B00AB873D /* ParabolaTableViewCell.swift */; };
 		C66A00A91CB5A00700AB873D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66A00A81CB5A00700AB873D /* Main.storyboard */; };
 		C66A00AB1CB5A03800AB873D /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00AA1CB5A03800AB873D /* LiveViewController.swift */; };
-		C66A00AE1CB5A04700AB873D /* EventiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00AC1CB5A04700AB873D /* EventiViewController.swift */; };
 		C66A00AF1CB5A04700AB873D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00AD1CB5A04700AB873D /* TabBarViewController.swift */; };
 		C66A00B11CB5A05300AB873D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A00B01CB5A05300AB873D /* AppDelegate.swift */; };
 		C66A00B51CB5A06A00AB873D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66A00B41CB5A06A00AB873D /* LaunchScreen.storyboard */; };
-		C672B3791CB5BB7A00283E09 /* Eventi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672B3781CB5BB7A00283E09 /* Eventi.swift */; };
+		C67D899D1CD3F39400B8B9AD /* EventiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D899C1CD3F39400B8B9AD /* EventiTableViewController.swift */; };
+		C67D899F1CD3F97300B8B9AD /* EventiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D899E1CD3F97300B8B9AD /* EventiViewController.swift */; };
 		C6C060EE1CB69134009BBAC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C060ED1CB69134009BBAC9 /* Assets.xcassets */; };
 		CBC0EC82AAC4BD24AA756DEB /* libPods-5minXTE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCB240462736C8E25FA04C1 /* libPods-5minXTE.a */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		C6530CC21CD006CD00483A96 /* ladonnaadultera.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ladonnaadultera.html; sourceTree = "<group>"; };
 		C6530CC31CD006CD00483A96 /* lasamaritanaalpozzodigiacobbe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lasamaritanaalpozzodigiacobbe.html; sourceTree = "<group>"; };
 		C6530CC41CD006CD00483A96 /* zaccheo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zaccheo.html; sourceTree = "<group>"; };
+		C65DE5071CD3EEA6001F0166 /* EventiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventiTableViewCell.swift; sourceTree = "<group>"; };
 		C66A00701CB59E8800AB873D /* 5minXTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5minXTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66A007F1CB59E8800AB873D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C66A00851CB59EBC00AB873D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -68,11 +70,11 @@
 		C66A00A61CB59F7B00AB873D /* ParabolaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParabolaTableViewCell.swift; sourceTree = "<group>"; };
 		C66A00A81CB5A00700AB873D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C66A00AA1CB5A03800AB873D /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
-		C66A00AC1CB5A04700AB873D /* EventiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventiViewController.swift; sourceTree = "<group>"; };
 		C66A00AD1CB5A04700AB873D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C66A00B01CB5A05300AB873D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C66A00B41CB5A06A00AB873D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C672B3781CB5BB7A00283E09 /* Eventi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eventi.swift; sourceTree = "<group>"; };
+		C67D899C1CD3F39400B8B9AD /* EventiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventiTableViewController.swift; sourceTree = "<group>"; };
+		C67D899E1CD3F97300B8B9AD /* EventiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventiViewController.swift; sourceTree = "<group>"; };
 		C6C060ED1CB69134009BBAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,7 +207,8 @@
 		C672B3751CB5BB4600283E09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C66A00AC1CB5A04700AB873D /* EventiViewController.swift */,
+				C67D899E1CD3F97300B8B9AD /* EventiViewController.swift */,
+				C67D899C1CD3F39400B8B9AD /* EventiTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 		C672B3761CB5BB4F00283E09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C65DE5071CD3EEA6001F0166 /* EventiTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -220,7 +224,6 @@
 		C672B3771CB5BB5900283E09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C672B3781CB5BB7A00283E09 /* Eventi.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -378,13 +381,14 @@
 				C66A008D1CB59F2300AB873D /* Artwork.swift in Sources */,
 				C66A00AF1CB5A04700AB873D /* TabBarViewController.swift in Sources */,
 				C66A00AB1CB5A03800AB873D /* LiveViewController.swift in Sources */,
-				C66A00AE1CB5A04700AB873D /* EventiViewController.swift in Sources */,
 				C66A008F1CB59F2300AB873D /* VCMapView.swift in Sources */,
 				C66A00B11CB5A05300AB873D /* AppDelegate.swift in Sources */,
 				C66A00991CB59F4700AB873D /* Parabola.swift in Sources */,
-				C672B3791CB5BB7A00283E09 /* Eventi.swift in Sources */,
+				C65DE5081CD3EEA6001F0166 /* EventiTableViewCell.swift in Sources */,
+				C67D899D1CD3F39400B8B9AD /* EventiTableViewController.swift in Sources */,
 				C66A008E1CB59F2300AB873D /* IndicazioniViewController.swift in Sources */,
 				C66A00981CB59F4700AB873D /* ParaboleModel.swift in Sources */,
+				C67D899F1CD3F97300B8B9AD /* EventiViewController.swift in Sources */,
 				C66A00A71CB59F7B00AB873D /* ParabolaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
