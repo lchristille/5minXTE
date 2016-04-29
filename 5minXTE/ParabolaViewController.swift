@@ -15,11 +15,15 @@ class ParabolaViewController: UIViewController {
     
 
     let titoloAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline), ]
-    let testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody)]
+    let testoAttributes: [String : AnyObject]
     
     var selectedParabola = Parabola(_title: "Benvenuto in 5minXTE", _text: "L'app migliore che ci sia!")
     
     required init?(coder aDecoder: NSCoder) {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .Justified
+        self.testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody), NSParagraphStyleAttributeName: paragraph]
+        
         super.init(coder: aDecoder)
     }
     

@@ -37,6 +37,7 @@ class ParaboleModel {
             if let htmlURL = NSBundle.mainBundle().URLForResource(filename, withExtension: "html") {
                 do {
                     attrString = try NSAttributedString(URL:htmlURL, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+                    
                 } catch {
                     print ("error")
                 }
