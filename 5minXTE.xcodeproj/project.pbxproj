@@ -100,6 +100,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C6031F771CD4010E005C5811 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				C66A00AA1CB5A03800AB873D /* LiveViewController.swift */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
 		C66A00671CB59E8800AB873D = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +130,10 @@
 		C66A00721CB59E8800AB873D /* 5minXTE */ = {
 			isa = PBXGroup;
 			children = (
+				C6031F771CD4010E005C5811 /* Live */,
 				C672B3741CB5BB3A00283E09 /* Eventi */,
 				C66A00A81CB5A00700AB873D /* Main.storyboard */,
 				C6C060ED1CB69134009BBAC9 /* Assets.xcassets */,
-				C66A00AA1CB5A03800AB873D /* LiveViewController.swift */,
 				C66A00AD1CB5A04700AB873D /* TabBarViewController.swift */,
 				C66A00B01CB5A05300AB873D /* AppDelegate.swift */,
 				C66A00B41CB5A06A00AB873D /* LaunchScreen.storyboard */,
