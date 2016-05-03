@@ -29,21 +29,28 @@ class ParaboleModel {
     
     static func paraboleFromFiles() -> ParaboleModel {
         let returnParabModel = ParaboleModel()
-        var attrString = NSAttributedString()
         let ParaboleDict = ["I Due Debitori del creditore":"iduedebitoridelcreditore", "Il Buon Samaritano":"ilbuonsamaritano", "La Pecora e La Dracma Perdute e Ritrovate":"lapecoraeladracma", "Il Padre Misericordioso (Figliol Prodigo)":"padremisericordioso", "Il Fariseo e il Pubblicano al Tempio":"fariseopubblicano", "Il Giudice e la Vedova":"ilgiudiceelavedova", "Il Ricco e il Povero Lazzaro":"ilriccoeilpoverolazzaro", "La Donna Adultera":"ladonnaadultera", "La Samaritana al Pozzo di Giacobbe":"lasamaritanaalpozzodigiacobbe", "Zaccheo":"zaccheo"]
         
         
         for (titolo, filename) in ParaboleDict {
-            if let htmlURL = NSBundle.mainBundle().URLForResource(filename, withExtension: "html") {
-                do {
-                    attrString = try NSAttributedString(URL:htmlURL, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-                    
-                } catch {
-                    print ("error")
-                }
+            if let readParabola = readParabolaFromFile(titolo, _filename: filename) {
+                returnParabModel.addParabola(readParabola)
             }
-            returnParabModel.addParabola(Parabola(_title: titolo, _attributedText: attrString))
         }
         return returnParabModel
+    }
+    
+    static func readParabolaFromFile(_title:String, _filename:String) -> Parabola? {
+        var attrString = NSAttributedString()
+        if let htmlURL = NSBundle.mainBundle().URLForResource(_filename, withExtension: "html") {
+            do {
+                attrString = try NSAttributedString(URL:htmlURL, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+                
+            } catch {
+                print ("error")
+            }
+        }
+
+        return Parabola(_title: _title, _attributedText: attrString)
     }
 }

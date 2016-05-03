@@ -12,7 +12,9 @@ class ParabolaTableViewController   : UITableViewController {
     
     // MARK: Properties
     
-    var paraboleToBeViewed = ParaboleModel()    
+    var paraboleToBeViewed = ParaboleModel()
+    
+    var showHome = false
     
 
     override func viewDidLoad() {
@@ -24,7 +26,20 @@ class ParabolaTableViewController   : UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         paraboleToBeViewed = ParaboleModel.paraboleFromFiles()
-
+        
+        let rightButtonView = UIView(frame: CGRectMake(0,0,25,25))
+        let rightButton = UIButton(type: .System)
+        rightButton.backgroundColor = UIColor.clearColor()
+        rightButton.frame = rightButtonView.frame
+        rightButton.setTitle("?", forState: .Normal)
+        rightButton.tintColor = UIColor.redColor()
+        rightButton.autoresizesSubviews = true
+        rightButton.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleLeftMargin]
+        rightButton.addTarget(self, action: #selector(ParabolaTableViewController.segueForHome), forControlEvents: UIControlEvents.TouchUpInside)
+        rightButtonView.addSubview(rightButton)
+        
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButtonView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,12 +110,24 @@ class ParabolaTableViewController   : UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowDetail" {
-            let parabolaViewController = segue.destinationViewController as! ParabolaViewController
-            if let selParabolaCell = sender as? ParabolaTableViewCell {
-                let indexPath = tableView.indexPathForCell(selParabolaCell)
-                let selParabola = paraboleToBeViewed.parabole[indexPath!.row]
-                parabolaViewController.selectedParabola = selParabola
+            if showHome {
+                let parabolaViewController = segue.destinationViewController as! ParabolaViewController
+                parabolaViewController.selectedParabola = ParaboleModel.readParabolaFromFile("Ciao, benvenuto in #5minXTE!", _filename: "benvenuto")!
+                showHome = false
+            } else {
+                let parabolaViewController = segue.destinationViewController as! ParabolaViewController
+                if let selParabolaCell = sender as? ParabolaTableViewCell {
+                    let indexPath = tableView.indexPathForCell(selParabolaCell)
+                    let selParabola = paraboleToBeViewed.parabole[indexPath!.row]
+                    parabolaViewController.selectedParabola = selParabola
+                }
+
             }
         }
+    }
+    
+    func segueForHome() {
+        showHome = true
+        self.performSegueWithIdentifier("ShowDetail", sender: self)
     }
 }

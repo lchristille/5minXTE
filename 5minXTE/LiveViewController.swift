@@ -15,10 +15,12 @@ class LiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
         let url = NSURL(string: "http://www.oltrenuovefrontiere.it/live.html")
         let request1 = NSURLRequest(URL: url!)
         let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
-        var textToBeViewed = NSMutableAttributedString(string: "Nessun testo da visualizzare")
+        var textToBeViewed = NSMutableAttributedString()
         
         do {
             let dataVal = try NSURLConnection.sendSynchronousRequest(request1, returningResponse: response)
@@ -32,8 +34,7 @@ class LiveViewController: UIViewController {
             print ("error")
         }
         
-        textToBeViewed.beginEditing()
-        textToBeViewed.addAttributes([NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody)], range: NSMakeRange(0, textToBeViewed.length))
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         
         textLive.attributedText = textToBeViewed
         

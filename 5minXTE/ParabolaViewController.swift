@@ -14,15 +14,19 @@ class ParabolaViewController: UIViewController {
     @IBOutlet weak var testo: UITextView!
     
 
-    let titoloAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+    let titoloAttributes: [String : AnyObject]
     let testoAttributes: [String : AnyObject]
     
-    var selectedParabola = Parabola(_title: "Benvenuto in 5minXTE", _text: "L'app migliore che ci sia!")
+    var selectedParabola = ParaboleModel.readParabolaFromFile("Ciao, benvenuto in #5minXTE!", _filename: "benvenuto")!
     
     required init?(coder aDecoder: NSCoder) {
-        let paragraph = NSMutableParagraphStyle()
-        paragraph.alignment = .Justified
-        self.testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody), NSParagraphStyleAttributeName: paragraph]
+        let bodyParagraph = NSMutableParagraphStyle()
+        bodyParagraph.alignment = .Justified
+        self.testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody), NSParagraphStyleAttributeName: bodyParagraph]
+        
+        let titleParagraph = NSMutableParagraphStyle()
+        titleParagraph.alignment = .Right
+        self.titoloAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleTitle1), NSParagraphStyleAttributeName: titleParagraph]
         
         super.init(coder: aDecoder)
     }

@@ -10,7 +10,7 @@ import UIKit
 
 class EventiTableViewController: UITableViewController {
     
-    let eventiToBeViewed = ["30/04 - San Giovannino Corso Roma", "07/05 - San Giovannino Corso Roma", "21/05 - San Giovannino Corso Roma", "28/05 - San Giovannino Corso Roma", "04/06 - San Giovannino Corso Roma", "11/06 - San Giovannino Corso Roma", "18/06 - San Giovannino Corso Roma", "25/06 - Stay Tuned!"]
+    let eventiToBeViewed = ["sab 30/04 - h21:00/23:00, Corso Roma", "sab 07/05 - h21:00/23:00, Corso Roma", "sab 21/05 - h21:00/23:00, Corso Roma", "sab 28/05 - h21:00/23:00, Corso Roma", "sab 04/06 - h21:00/23:00, Corso Roma", "sab 11/06 - h21:00/23:00, Corso Roma", "sab 18/06 - h21:00/23:00, Corso Roma", "sab 25/06 - Stay Tuned!"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

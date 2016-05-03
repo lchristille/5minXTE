@@ -71,7 +71,7 @@
         <scene sceneID="1Jw-at-aHM">
             <objects>
                 <splitViewController id="TIi-jy-VgV" userLabel="Parabole" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Parabole" id="4i0-A4-xyy" userLabel="Parabole"/>
+                    <tabBarItem key="tabBarItem" title="Parabole" image="ParaboleIcon" id="4i0-A4-xyy" userLabel="Parabole"/>
                     <connections>
                         <segue destination="OHD-1w-22e" kind="relationship" relationship="masterViewController" id="Kak-Th-iPa"/>
                         <segue destination="wOh-0U-KTF" kind="relationship" relationship="detailViewController" id="DKj-F9-br7"/>
@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tkN-ZW-brF">
-                                <rect key="frame" x="20" y="72" width="560" height="50"/>
+                                <rect key="frame" x="20" y="28" width="560" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="WXM-K2-y1Y"/>
                                 </constraints>
@@ -110,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-9N-mZi" userLabel="Testo">
-                                <rect key="frame" x="0.0" y="130" width="580" height="421"/>
+                                <rect key="frame" x="0.0" y="86" width="580" height="465"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -214,7 +214,7 @@
                             <constraint firstAttribute="trailing" secondItem="nQM-kR-DCn" secondAttribute="trailing" id="hK0-9k-UQO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Indicazioni" id="L9l-rl-oal" userLabel="Indicazioni"/>
+                    <tabBarItem key="tabBarItem" title="Indicazioni" image="IndicazioniIcon" id="L9l-rl-oal" userLabel="Indicazioni"/>
                     <connections>
                         <outlet property="mappa" destination="nQM-kR-DCn" id="CMe-3C-LdF"/>
                     </connections>
@@ -290,7 +290,7 @@
         <scene sceneID="glf-Zb-DY9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dGv-Rk-c3v" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eventi" id="lNj-6J-lzc" userLabel="Eventi"/>
+                    <tabBarItem key="tabBarItem" title="Eventi" image="EventiIcon" id="lNj-6J-lzc" userLabel="Eventi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dOS-jZ-3V6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -309,7 +309,7 @@
         <scene sceneID="68q-Zy-L9b">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cyf-e9-Nc8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Live" id="7vx-zz-7XX" userLabel="Live"/>
+                    <tabBarItem key="tabBarItem" title="Live" image="LiveIcon" id="7vx-zz-7XX" userLabel="Live"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tX5-M8-aoL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -325,6 +325,12 @@
             <point key="canvasLocation" x="1192" y="834"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="EventiIcon" width="50" height="50"/>
+        <image name="IndicazioniIcon" width="75" height="75"/>
+        <image name="LiveIcon" width="75" height="75"/>
+        <image name="ParaboleIcon" width="49" height="55"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GPm-kx-MhR"/>
     </inferredMetricsTieBreakers>
