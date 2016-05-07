@@ -17,7 +17,7 @@ class LiveViewController: UIViewController {
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         
-        let url = NSURL(string: "http://www.oltrenuovefrontiere.it/live.html")
+        let url = NSURL(string: "https://www.oltrenuovefrontiere.it/live.html")
         let request1 = NSURLRequest(URL: url!)
         let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
         var textToBeViewed = NSMutableAttributedString()
