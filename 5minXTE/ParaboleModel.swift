@@ -19,7 +19,7 @@ class ParaboleModel {
         parabole = [Parabola]()
     }
     
-    func addParabola(_parabola: Parabola) {
+    func addParabola(_ _parabola: Parabola) {
         parabole.append(_parabola)
     }
     
@@ -40,11 +40,11 @@ class ParaboleModel {
         return returnParabModel
     }
     
-    static func readParabolaFromFile(_title:String, _filename:String) -> Parabola? {
+    static func readParabolaFromFile(_ _title:String, _filename:String) -> Parabola? {
         var attrString = NSAttributedString()
-        if let htmlURL = NSBundle.mainBundle().URLForResource(_filename, withExtension: "html") {
+        if let htmlURL = Bundle.main.url(forResource: _filename, withExtension: "html") {
             do {
-                attrString = try NSAttributedString(URL:htmlURL, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+                attrString = try NSAttributedString(url:htmlURL, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
                 
             } catch {
                 print ("error")

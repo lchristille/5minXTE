@@ -27,15 +27,15 @@ class ParabolaTableViewController   : UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         paraboleToBeViewed = ParaboleModel.paraboleFromFiles()
         
-        let rightButtonView = UIView(frame: CGRectMake(0,0,25,25))
-        let rightButton = UIButton(type: .System)
-        rightButton.backgroundColor = UIColor.clearColor()
+        let rightButtonView = UIView(frame: CGRect(x: 0,y: 0,width: 25,height: 25))
+        let rightButton = UIButton(type: .system)
+        rightButton.backgroundColor = UIColor.clear
         rightButton.frame = rightButtonView.frame
-        rightButton.setTitle("?", forState: .Normal)
-        rightButton.tintColor = UIColor.redColor()
+        rightButton.setTitle("?", for: UIControlState())
+        rightButton.tintColor = UIColor.red
         rightButton.autoresizesSubviews = true
-        rightButton.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleLeftMargin]
-        rightButton.addTarget(self, action: #selector(ParabolaTableViewController.segueForHome), forControlEvents: UIControlEvents.TouchUpInside)
+        rightButton.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleLeftMargin]
+        rightButton.addTarget(self, action: #selector(ParabolaTableViewController.segueForHome), for: UIControlEvents.touchUpInside)
         rightButtonView.addSubview(rightButton)
         
         
@@ -49,18 +49,18 @@ class ParabolaTableViewController   : UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return paraboleToBeViewed.parabole.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "ParabolaTableViewCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ParabolaTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ParabolaTableViewCell
         
         let parabola = paraboleToBeViewed.parabole[indexPath.row]
         
@@ -108,16 +108,16 @@ class ParabolaTableViewController   : UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
             if showHome {
-                let parabolaViewController = segue.destinationViewController as! ParabolaViewController
+                let parabolaViewController = segue.destination as! ParabolaViewController
                 parabolaViewController.selectedParabola = ParaboleModel.readParabolaFromFile("Ciao, benvenuto in #5minXTE!", _filename: "benvenuto")!
                 showHome = false
             } else {
-                let parabolaViewController = segue.destinationViewController as! ParabolaViewController
+                let parabolaViewController = segue.destination as! ParabolaViewController
                 if let selParabolaCell = sender as? ParabolaTableViewCell {
-                    let indexPath = tableView.indexPathForCell(selParabolaCell)
+                    let indexPath = tableView.indexPath(for: selParabolaCell)
                     let selParabola = paraboleToBeViewed.parabole[indexPath!.row]
                     parabolaViewController.selectedParabola = selParabola
                 }
@@ -128,6 +128,6 @@ class ParabolaTableViewController   : UITableViewController {
     
     func segueForHome() {
         showHome = true
-        self.performSegueWithIdentifier("ShowDetail", sender: self)
+        self.performSegue(withIdentifier: "ShowDetail", sender: self)
     }
 }

@@ -21,12 +21,12 @@ class ParabolaViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         let bodyParagraph = NSMutableParagraphStyle()
-        bodyParagraph.alignment = .Justified
-        self.testoAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleBody), NSParagraphStyleAttributeName: bodyParagraph]
+        bodyParagraph.alignment = .justified
+        self.testoAttributes = [NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body), NSParagraphStyleAttributeName: bodyParagraph]
         
         let titleParagraph = NSMutableParagraphStyle()
-        titleParagraph.alignment = .Right
-        self.titoloAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleTitle1), NSParagraphStyleAttributeName: titleParagraph]
+        titleParagraph.alignment = .right
+        self.titoloAttributes = [NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1), NSParagraphStyleAttributeName: titleParagraph]
         
         super.init(coder: aDecoder)
     }
@@ -49,12 +49,12 @@ class ParabolaViewController: UIViewController {
         testo.scrollsToTop = true
     }
     
-    override func viewWillAppear(animated: Bool) {
-        testo.scrollEnabled = false
+    override func viewWillAppear(_ animated: Bool) {
+        testo.isScrollEnabled = false
     }
     
-    override func viewDidAppear(animated: Bool) {
-        testo.scrollEnabled = true
+    override func viewDidAppear(_ animated: Bool) {
+        testo.isScrollEnabled = true
     }
     
 

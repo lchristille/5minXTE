@@ -16,7 +16,7 @@ class IndicazioniViewController: UIViewController {
     let initialLocation = CLLocation(latitude: 44.9103781, longitude: 8.6122585)
     let regionRadius = CLLocationDistance(200)
     
-    func centerMapOnLocation(location: CLLocation) {
+    func centerMapOnLocation(_ location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mappa.setRegion(coordinateRegion, animated: true)
     }

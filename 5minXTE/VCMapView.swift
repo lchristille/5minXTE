@@ -11,27 +11,27 @@ import MapKit
 
 extension IndicazioniViewController: MKMapViewDelegate {
     
-    internal func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    internal func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? Artwork {
             let identifier = "pin"
             var view: MKPinAnnotationView
-            if let dequedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView {
+            if let dequedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
                 dequedView.annotation = annotation
                 view = dequedView
             } else {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y:5)
-                view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             }
             return view
         }
         return nil
     }
     
-    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let location = view.annotation as! Artwork
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
-        location.mapItem().openInMapsWithLaunchOptions(launchOptions)
+        location.mapItem().openInMaps(launchOptions: launchOptions)
     }
 }

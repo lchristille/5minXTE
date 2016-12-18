@@ -15,15 +15,15 @@ class LiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        let url = NSURL(string: "https://www.oltrenuovefrontiere.it/live.html")
-        let request1 = NSURLRequest(URL: url!)
-        let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
+        let url = URL(string: "https://www.oltrenuovefrontiere.it/live.html")
+        let request1 = URLRequest(url: url!)
+        let response: AutoreleasingUnsafeMutablePointer<URLResponse?>?=nil
         var textToBeViewed = NSMutableAttributedString()
         
         do {
-            let dataVal = try NSURLConnection.sendSynchronousRequest(request1, returningResponse: response)
+            let dataVal = try NSURLConnection.sendSynchronousRequest(request1, returning: response)
             do {
                 textToBeViewed = try NSMutableAttributedString(data: dataVal, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
                 
@@ -34,7 +34,7 @@ class LiveViewController: UIViewController {
             print ("error")
         }
         
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         
         textLive.attributedText = textToBeViewed
         
@@ -46,12 +46,12 @@ class LiveViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        textLive.scrollEnabled = false
+    override func viewWillAppear(_ animated: Bool) {
+        textLive.isScrollEnabled = false
     }
     
-    override func viewDidAppear(animated: Bool) {
-        textLive.scrollEnabled = true
+    override func viewDidAppear(_ animated: Bool) {
+        textLive.isScrollEnabled = true
     }
     
 
